@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #006699;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -48,6 +48,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 @-ms-viewport {
@@ -208,6 +209,8 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 svg:not(:root) {
@@ -470,11 +473,15 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  color: #006699;
 }
 
 .blockquote-footer::before {
   content: "\2014 \00A0";
+}
+
+footer a {
+  color: #006699;
 }
 
 .img-fluid {
@@ -3847,7 +3854,6 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-
 }
 
 .nav-link {
@@ -3935,24 +3941,45 @@ tbody.collapse.show {
 }
 
 .navbar {
-  position: relative;
+  position: flex;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-}
-
-.navbar a {
+  transition: background-color 300ms linear;
+  background-color: transparent;
   color: #cccccc;
 }
+
+.navbar-colored {
+  position: flex;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  transition: background-color 200ms linear;
+  background-color: white;
+  color: black;
+}
+
 
 .navbar > .container,
 .navbar > .container-fluid {
@@ -3979,6 +4006,13 @@ tbody.collapse.show {
   white-space: nowrap;
 }
 
+.navbar-brand img {
+  max-height: 150px;
+  height: auto;
+  max-width: 150px;
+  width: auto;
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
@@ -3999,11 +4033,11 @@ tbody.collapse.show {
 .navbar-nav .nav-link {
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-top: 9px;
+  margin-top: 10px;
   margin-bottom: auto;
   margin-left: 0.8rem;
   margin-right: 0.8rem;
-  color: #cccccc;
+
 }
 
 .navbar-nav .dropdown-menu {
@@ -4029,6 +4063,7 @@ tbody.collapse.show {
 }
 
 .navbar-toggler {
+  color: white;
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
@@ -4046,9 +4081,9 @@ tbody.collapse.show {
 }
 
 .navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -4351,6 +4386,10 @@ tbody.collapse.show {
   color: #cccccc;
 }
 
+.navbar-light .navbar-nav .nav-link-scroll {
+  color: black;
+}
+
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: #006699;
 }
@@ -4365,7 +4404,7 @@ tbody.collapse.show {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #bfbfbf;
+  color: #999999;
   text-shadow: 4px 4px 8px rgba(150, 150, 150, 0.52);
 }
 
@@ -5560,6 +5599,25 @@ button.close {
   overflow: scroll;
 }
 
+#scrollTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #006699; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
@@ -5866,11 +5924,12 @@ button.close {
 
 .carousel {
   position: relative;
+  z-index: 1;
+  height: 100%;
 }
 
 .carousel-inner {
   position: relative;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -5880,7 +5939,6 @@ button.close {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
