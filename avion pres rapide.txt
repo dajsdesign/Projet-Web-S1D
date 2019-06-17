@@ -1,0 +1,11 @@
+Beechcraft ;
+
+Aéronef de tourisme pouvant aller à 326 km/h. Il est équipé de 5 à 6 places.
+
+Robin ;
+
+Le Robin est un aéronef de tourisme pouvant aller a 305 km/h. Il est équipé de seulement 4 places.
+
+Cessna ;
+
+C’est un avion léger pouvant aller 204 km/h maximum. Il est équipé de 2 places seulement.
