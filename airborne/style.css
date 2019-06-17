@@ -14,3 +14,13 @@ h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font
     color: #cccccc;
     margin: 15px;
 }
+
+#carousel h1 {
+	color: #006699;
+	margin-bottom: 2%;
+	font-size: 4rem;
+}
+
+.carousel-caption {
+	margin-bottom: 5%;
+}
