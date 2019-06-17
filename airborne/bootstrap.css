@@ -31,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px;
+  --font-family-sans-serif: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 23px;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -632,6 +632,8 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .col {
@@ -2781,16 +2783,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #007bff;
+  color: #006699;
   background-color: transparent;
   background-image: none;
-  border-color: #007bff;
+  border-color: #006699;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #006699;
+  border-color: #006699;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -5939,6 +5941,7 @@ button.close {
   position: relative;
   z-index: 1;
   height: 100%;
+  width: 100%;
 }
 
 .carousel-inner {
@@ -5959,6 +5962,7 @@ button.close {
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  width: 100%;
 }
 
 .carousel-item.active,

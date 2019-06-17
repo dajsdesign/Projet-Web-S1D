@@ -1,7 +1,7 @@
-h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; } h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; } p { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } blockquote { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } pre { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
+h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 23px; } blockquote { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } pre { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
 
 .content {
-	margin: 2% 15% 2% 15%;
+	margin: 2% 5% 2% 5%;
 }
 
 .navbar-nav > li > a:hover,
@@ -23,4 +23,122 @@ h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font
 
 .carousel-caption {
 	margin-bottom: 5%;
+}
+
+#presentation h2 {
+	text-align: center;
+	font-weight: 100!important;
+	margin-bottom: 4%;
+}
+
+#presentation p {
+	font-size: 1rem;
+}
+
+#presentation {
+	background-image: url(assets/images/aile_gauche.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 40rem;
+}
+
+.inline-flex {
+	display: inline-flex;
+	vertical-align: center;
+}
+
+.inline-flex i {
+	color: #006699;
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #ccc;
+	margin-right: 10px;
+	margin-bottom: 7px;
+}
+
+.col-sm {
+	margin-bottom: 3%;
+}
+
+#presentation1 {
+	background-color: white;
+}
+
+#avions {
+	background-color: #f2f2f2;
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.image-flip:hover .backside, .image-flip.hover .backside {
+-webkit-transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+ 
+.image-flip:hover .frontside, .image-flip.hover .frontside {
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+ 
+.image-flip {
+width: auto;
+height: 205px;
+}
+ 
+.mainflip {
+-webkit-transition: 1s;
+-webkit-transform-style: preserve-3d;
+-ms-transition: 1s;
+-moz-transition: 1s;
+-moz-transform: perspective(1000px);
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transition: 1s;
+transform-style: preserve-3d;
+position: relative;
+}
+ 
+.frontside, .backside {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: 1s;
+-webkit-transform-style: preserve-3d;
+-moz-transition: 1s;
+-moz-transform-style: preserve-3d;
+-o-transition: 1s;
+-o-transform-style: preserve-3d;
+-ms-transition: 1s;
+-ms-transform-style: preserve-3d;
+transition: 1s;
+transform-style: preserve-3d;
+position: absolute;
+top: 0;
+left: 0;
+}
+ 
+.frontside {
+-webkit-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+z-index: 2;
+}
+ 
+.backside {
+background: white;
+-webkit-transform: rotateY(-180deg);
+-moz-transform: rotateY(-180deg);
+-o-transform: rotateY(-180deg);
+-ms-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+ 
+.card, .card-img-top {
+border-radius: 0;
 }
