@@ -143,6 +143,26 @@ transform: rotateY(-180deg);
 border-radius: 0;
 }
 
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
 #footer {
     background-image: url(assets/images/footer.png) ;
     background-repeat: no-repeat;
@@ -226,3 +246,4 @@ border-radius: 0;
 
 	text-align: center;
 }
+
