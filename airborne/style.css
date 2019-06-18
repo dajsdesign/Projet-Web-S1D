@@ -175,6 +175,10 @@ border-radius: 0;
 	margin-right: auto!important;
 }
 
+#avions button {
+	margin-bottom: 2rem;
+}
+
 footer {
     background-image: url(assets/images/footer.jpg) ;
     background-repeat: no-repeat;
