@@ -163,11 +163,15 @@
 	<!--  -->
 
 	<!-- Equipe -->
-	<div class="container text-center align-middle" id="equipe">
-	  <div class="row">
-	    <div class="col-sm">
+
+
+
+	<div class="container" id="equipe">
+		<h3 class="text-center">L'équipe</h3>
+	  <div class="row justify-content-center">
+	    <div class="col-auto">
 		<div class="card" style="width: 11rem; height: 100%;">
-		  <img class="card-img-top" src="assets/images/henri.jpg" alt="Card image cap">
+		  <img class="card-img-top" src="assets/images/henri.jpg" alt="Henri">
 		  <div class="card-body">
 		    <p class="card-text">
 		    	<h2>Henri</h2>
@@ -176,9 +180,9 @@
 		  </div>
 		</div>
 	    </div>
-	    <div class="col-sm">
-	      <div class="card" style="width: 11rem; height: 100%;">
-		  <img class="card-img-top" src="assets/images/julien.jpg" alt="Card image cap">
+	    <div class="col-auto">
+	    <div class="card" style="width: 11rem; height: 100%;">
+		  <img class="card-img-top" src="assets/images/julien.jpg" alt="Julien">
 		  <div class="card-body">
 		    <p class="card-text">
 		    	<h2>Julien</h2>
@@ -187,9 +191,9 @@
 		  </div>
 		</div>
 	    </div>
-	    <div class="col-sm">
+	    <div class="col-auto">
 	      <div class="card" style="width: 11rem; height: 100%;">
-		  <img class="card-img-top" src="assets/images/gaspard.jpg" alt="Card image cap">
+		  <img class="card-img-top" src="assets/images/gaspard.jpg" alt="Gaspard">
 		  <div class="card-body">
 		    <p class="card-text">
 		    	<h2>Gaspard</h2>
@@ -204,12 +208,12 @@
 
 	<!-- Statistiques -->
 	<div class="container text-center align-middle">
-		<div class="row stat">
+		<div class="row justify-content-center stat">
             <div class="col-sm">
                 <div class="milestone-counter">
                     <i class="far fa-clock"></i>
                     <span class="stat-count highlight">680</span>
-                    <div class="milestone-details">Heures</div>
+                    <div class="milestone-details">Heures de cours</div>
                 </div>
             </div>
             <div class="col-sm">
@@ -316,7 +320,7 @@ function topFunction() {
 		"use strict";
 		function count($this){
 		var current = parseInt($this.html(), 10);
-		current = current + 1; /* Where 50 is increment */	
+		current = current + 5; /* Where 50 is increment */	
 		$this.html(++current);
 			if(current > $this.data('count')){
 				$this.html($this.data('count'));
