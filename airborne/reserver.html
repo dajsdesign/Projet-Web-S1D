@@ -12,6 +12,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/25b1c8146d.js"></script>
+	<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
 	<!-- Smooth scroll -->
 	<script type="text/javascript">
@@ -98,150 +100,64 @@
 		
 	</div>
 
-	<!-- Présentation -->
-	<div class="content">
-		<div id="presentation">
-			<h2>Un club d'exception</h2>
-			<div class="container-fluid">
-			  <div class="row">
-			    <div class="col-sm">
-			    	<div class="inline-flex"><i class="fas fa-map-marked-alt"></i><h5 class="align-middle">Un club bien situé</h5></div>
-				      <p>Nous sommes situés dans l’est de la France à côté de la forêt d’Orient pour son climat avec peu de vent et un climat tempéré. Vous pourrez aussi survoler les lacs de la forêt d’Orient.</p>
-			    </div>
-			    <div class="col-sm">
-			      	<div class="inline-flex"><i class="fas fa-plane"></i><h5 class="align-middle">Un parc machine moderne</h5></div>
-				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      consequat.</p>
-			    </div>
-			    <div class="col-sm">
-			      	<div class="inline-flex"><i class="fas fa-graduation-cap"></i><h5 class="align-middle">Une école reconnue</h5></div>
-				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      consequat.</p>
-			    </div>
-			  </div>
-			</div>
-			<div class="container-fluid">
-			  <div class="row">
-			    <div class="col-sm">
-			    	<div class="inline-flex"><i class="fas fa-warehouse"></i><h5 class="align-middle">Des infrastructures conviviales</h5></div>
-				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      consequat.</p>
-			    </div>
-			    <div class="col-sm">
-			      	<div class="inline-flex"><i class="fas fa-leaf"></i><h5 class="align-middle">Un aéroclub Eco-responsable</h5></div>
-				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      consequat.</p>
-			    </div>
-			    <div class="col-sm">
-			      	<div class="inline-flex"><i class="far fa-comments"></i><h5 class="align-middle">On vous écoute</h5></div>
-				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      consequat.</p>
-			    </div>
-			  </div>
-			</div>
-		</div>
-	</div>
-	<!--  -->
-
-	<!-- Accessible toute l'année -->
-	<div id="accessible" class="align-middle">
-		<h3>Accessible toute l'année</h3>
-		<p class="align-middle text-left">
-			En toutes saisons et dès l’âge de 13 ans, prenez les doubles commandes!
-		</p>
-	</div>
-	<!--  -->
-
-	<!-- Equipe -->
-	<div class="container text-center align-middle" id="equipe">
-	  <div class="row">
-	    <div class="col-sm">
-		<div class="card" style="width: 11rem; height: 100%;">
-		  <img class="card-img-top" src="assets/images/henri.jpg" alt="Card image cap">
-		  <div class="card-body">
-		    <p class="card-text">
-		    	<h2>Henri</h2>
-		    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    tempor incididunt ut labore et dolore magna aliqua.</p>
-		  </div>
-		</div>
-	    </div>
-	    <div class="col-sm">
-	      <div class="card" style="width: 11rem; height: 100%;">
-		  <img class="card-img-top" src="assets/images/julien.jpg" alt="Card image cap">
-		  <div class="card-body">
-		    <p class="card-text">
-		    	<h2>Julien</h2>
-		    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    tempor incididunt ut labore et dolore magna aliqua.</p>
-		  </div>
-		</div>
-	    </div>
-	    <div class="col-sm">
-	      <div class="card" style="width: 11rem; height: 100%;">
-		  <img class="card-img-top" src="assets/images/gaspard.jpg" alt="Card image cap">
-		  <div class="card-body">
-		    <p class="card-text">
-		    	<h2>Gaspard</h2>
-		    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    tempor incididunt ut labore et dolore magna aliqua.</p>
-		  </div>
-		</div>
+	<!-- Reservation -->
+	<form id="formulaire" class="align-middle">
+		<h2 class="text-center">Réserver pour un cours</h2>
+	  <div class="form-group row">
+	    <label for="Nom" class="col-auto col-form-label">Nom</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="nom" placeholder="Nom">
 	    </div>
 	  </div>
-	</div>	
-	<!--  -->
-
-	<!-- Statistiques -->
-	<div class="container text-center align-middle">
-		<div class="row stat">
-            <div class="col-sm">
-                <div class="milestone-counter">
-                    <i class="far fa-clock"></i>
-                    <span class="stat-count highlight">680</span>
-                    <div class="milestone-details">Heures</div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="milestone-counter">
-                    <i class="fas fa-plane"></i>
-                    <span class="stat-count highlight">12</span>
-                    <div class="milestone-details">Avions</div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="milestone-counter">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span class="stat-count highlight">221</span>
-                    <div class="milestone-details">Jours d'ouverture</div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="milestone-counter">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span class="stat-count highlight">16</span>
-                    <div class="milestone-details">BIA</div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="milestone-counter">
-                    <i class="fas fa-users"></i>
-                    <span class="stat-count highlight">32</span>
-                    <div class="milestone-details">Membres</div>
-                </div>
-            </div>
-		</div>
-	</div>
+	  <div class="form-group row">
+	    <label for="Prenom" class="col-auto col-form-label">Prénom</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="inputEmail3" class="col-auto col-form-label">Email</label>
+	    <div class="col-sm-10">
+	      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="Numéro" class="col-auto col-form-label">Numéro de téléphone</label>
+	    <div class="col-sm-10">
+	      <input type="tel" class="form-control" id="numero" placeholder="+33">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="Numéro" class="col-auto col-form-label">Sur quel avion désirez-vous pratiquer?</label>
+	    <div class="col-sm-10">
+	      <select class="custom-select">
+		  <option selected>Aléatoire</option>
+		  <option value="1">Robin</option>
+		  <option value="2">Beechcraft Bonanza</option>
+		  <option value="3">Cesna</option>
+		  </select>
+	    </div>
+	  </div>
+	  	<!-- Datetime -->
+	  	<div class="form-group row">
+	    <label for="Date" class="col-auto col-form-label">Date</label>
+	    <div class="col-sm-10">
+	      <input id="datepicker" width="auto"/>
+	    <script>
+	        $('#datepicker').datepicker({
+	            uiLibrary: 'bootstrap4',
+	            format: 'dd/mm/yyyy',
+	        });
+	    </script>
+	    </div>
+	  	</div>
+		<!--  -->
+	  <div class="form-group row">
+	    <div class="col-sm-10">
+	      <button type="button" class="btn btn-outline-primary btn-sm float-right">Réserver</button>
+	    </div>
+	  </div>
+	</form>
 	<!--  -->
 
 	<!-- Footer -->
@@ -310,28 +226,9 @@ function topFunction() {
 </script>
 <!--  -->
 
-<!-- Stats -->
-<script type="text/javascript">
-	(function($) {
-		"use strict";
-		function count($this){
-		var current = parseInt($this.html(), 10);
-		current = current + 1; /* Where 50 is increment */	
-		$this.html(++current);
-			if(current > $this.data('count')){
-				$this.html($this.data('count'));
-			} else {    
-				setTimeout(function(){count($this)}, 50);
-			}
-		}        	
-		$(".stat-count").each(function() {
-		  $(this).data('count', parseInt($(this).html(), 10));
-		  $(this).html('0');
-		  count($(this));
-		});
-   })(jQuery);
-</script>
+<!-- Date -->
 <!--  -->
+
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
