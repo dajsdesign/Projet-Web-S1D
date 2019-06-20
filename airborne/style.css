@@ -486,3 +486,27 @@ footer #social li {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#formation {
+	width: 100%;
+	height: 30rem;
+	background-size: cover;
+	background-image: url(assets/images/formation.jpg);
+}
+
+#seformer h2 {
+	text-align: center;
+	font-weight: 100!important;
+	margin-bottom: 4%;
+}
+
+#seformer p {
+	font-size: 1rem;
+}
+
+#seformer {
+	background-image: url(assets/images/);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 40rem;
+}
