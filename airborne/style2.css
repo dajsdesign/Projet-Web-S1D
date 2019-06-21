@@ -79,6 +79,16 @@ background-size: 50%;
 
 }
 
+.img_section3 figure img, figure p {
+  margin-left: 0px;
+  width: 300px;
+  transition: .3s ease-in-out;
+}
+.img_section3:hover figure img, figure p {
+  text-opacity: 0%;
+  margin-left: 300px;
+/*# sourceMappingURL=bootstrap.css.map */
+
 .imggg {
 
 z-index: 	6;
