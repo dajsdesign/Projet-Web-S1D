@@ -12,8 +12,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/25b1c8146d.js"></script>
-	<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
 	<!-- Smooth scroll -->
 	<script type="text/javascript">
@@ -24,12 +22,14 @@
 		  left: 0, 
 		  behavior: 'smooth'
 		});
+
 		// Scroll certain amounts from current position 
 		window.scrollBy({ 
 		  top: 100, // could be negative value
 		  left: 0, 
 		  behavior: 'smooth' 
 		});
+
 		// Scroll to a certain element
 		document.querySelector('.hello').scrollIntoView({ 
 		  behavior: 'smooth' 
@@ -64,8 +64,8 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	    	<!-- Accueil -->
-	      <li class="nav-item">
-	        <a class="nav-link" href="index.html">Accueil</a>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
 	      </li>
 	      <!-- Présentation -->
 	      <li class="nav-item">
@@ -77,11 +77,11 @@
 	      </li>
 	      <!-- Se former -->
 	      <li class="nav-item">
-	        <a class="nav-link active" href="seformer.html">Se former<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="seformer.html">Se former</a>
 	      </li>
 	      <!-- Infos pratiques -->
 	      <li class="nav-item">
-	        <a class="nav-link" href="infospratiques.html">Infos pratiques</a>
+	        <a class="nav-link active" href="infospratiques.html">Infos pratiques</a>
 	      </li>
 	    </ul>
 	    <!-- Recherche / User -->
@@ -94,116 +94,99 @@
 	</nav>
 	<!--  -->
 
-	<!-- Titre -->
-	<div id="formation">
-		<div class="titre text-center justify-content-center">
-		    <h1>École</h1>
-		    <h3>Devenir pilote à Troyes</h3>
-		</div>
+	<!-- Tarifs -->
+	<div class="container" id="tarifs">
+		<h2>Nos tarifs</h2>
+		<table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th scope="col">Nombre de personnes</th>
+		      <th scope="col">1h</th>
+		      <th scope="col">2h</th>
+		      <th scope="col">3h</th>
+		      <th scope="col">4h</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td>60€</td>
+		      <td>70€</td>
+		      <td>80€</td>
+		      <td>90€</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">2</th>
+		      <td>100€</td>
+		      <td>120€</td>
+		      <td>140€</td>
+		      <td>160€</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">3</th>
+		      <td>160€</td>
+		      <td>200€</td>
+		      <td>240€</td>
+		      <td>280€</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">4</th>
+		      <td>260€</td>
+		      <td>340€</td>
+		      <td>420€</td>
+		      <td>500€</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">5</th>
+		      <td>440€</td>
+		      <td>600€</td>
+		      <td>760€</td>
+		      <td>920€</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">6</th>
+		      <td>780€</td>
+		      <td>1100€</td>
+		      <td>1420€</td>
+		      <td>1740€</td>
+		    </tr>
+		  </tbody>
+		</table>		
 	</div>
 	<!--  -->
 
-	<!-- Présentation formations -->
-	<div class="content align-middle">
-		<div id="diplome">
-			<h2>Nos formations</h2>
-			<div class="container-fluid">
-			  <div class="row">
-			    <div class="col-sm">
-			    	<div class="inline-flex" style="margin-top: 1rem;
-	margin-bottom: 1rem;"></div>
-				      <p>Notre club propose 4 formations:<br> 
-				      	BB qui veut dire Brevet de Base permet de voler dans un rayon de 30 km autour de votre aérodrome, vous aurez besoin de 20h de vol avant de passer l'examen et cette formation est disponible à partir de 15 ans.<br>
-				      	BIA ce qui veut dire Brevet d'Initiation Aéronotique, c'est un diplôme à part pour l'éducation nationale, il faut avoir minimum 13 ans pour pouvoir le passer. L'épreuve écrite dure 2h30 et il faut répondre à une série de 100 questions. Le BIA est gratuit et permet d'avoir des bourses pour le Brevet de Pilote.<br>
-				      	PPL est une Licence Pilote Privée d'avion, pour passer cette licence il faut être agé de 16 ans. La formation pratique dure 45h de vol minimum, dont 25h en double commande et 10h en vol solo. La formation coûte 110€/heure.<br>
-				      	LAPL qui veut dire Licence de Pilote d'Avion Léger elle permet de voler en europe et en france avec des passagers. Pour ce presenter à l'examen il faut avoir 17 ans minimum. La formation coûte entre 3500€ et 5000€ selon les différents avions.
-				      </p>
-			    </div>
-			    <div class="col-sm" id="progression">
-			      	<div class="inline-flex"></div>
-			      	<h3>BIA</h3>
-			      	<div class="progress">
-					  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100" style="width: 48%"></div>
-					</div>
-					<h3>BB</h3>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-					</div>
-					<h3>LAPL</h3>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
-					</div>
-					<h3>PPL</h3>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%"></div>
-					</div>
-			    </div>
-			  </div>
-			</div>
-		</div>
+	<!-- Horaires/map -->
+	<div class="container align-middle text-center" id="horaires">
+		<h2>Horaires et accès</h2>
+	  <div class="row">
+	    <div class="col">
+	      <table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th scope="col"></th>
+		      <th scope="col">Semaine</th>
+		      <th scope="col">Week-end</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">Matin</th>
+		      <td>9h-12h</td>
+		      <td>10h-12h</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">Après-midi</th>
+		      <td>14h-18h</td>
+		      <td>15h-18h</td>
+		    </tr>
+		  </tbody>
+		</table>
+	    </div>
+	    <div class="col">
+	      <iframe id="carte2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2655.7447308304363!2d4.0773498!3d48.2692868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee990d1c7f84a3%3A0x737735ec593e713f!2s9+Rue+Quebec%2C+10430+Rosi%C3%A8res-pr%C3%A9s-Troyes!5e0!3m2!1sfr!2sfr!4v1560771992017!5m2!1sfr!2sfr" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    </div>
+	  </div>
 	</div>
-	<!--  -->
-
-	<!-- Reservation -->
-	<form id="formulaire" class="align-middle">
-		<h2 class="text-center">Réserver pour un cours</h2>
-	  <div class="form-group row">
-	    <label for="Nom" class="col-auto col-form-label">Nom</label>
-	    <div class="col-sm-10">
-	      <input type="text" class="form-control" id="nom" placeholder="Nom">
-	    </div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="Prenom" class="col-auto col-form-label">Prénom</label>
-	    <div class="col-sm-10">
-	      <input type="text" class="form-control" id="prenom" placeholder="Prénom">
-	    </div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="inputEmail3" class="col-auto col-form-label">Email</label>
-	    <div class="col-sm-10">
-	      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-	    </div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="Numéro" class="col-auto col-form-label">Numéro de téléphone</label>
-	    <div class="col-sm-10">
-	      <input type="tel" class="form-control" id="numero" placeholder="+33">
-	    </div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="Numéro" class="col-auto col-form-label">Sur quel avion désirez-vous pratiquer?</label>
-	    <div class="col-sm-10">
-	      <select class="custom-select">
-		  <option selected>Aléatoire</option>
-		  <option value="1">Robin</option>
-		  <option value="2">Beechcraft Bonanza</option>
-		  <option value="3">Cesna</option>
-		  </select>
-	    </div>
-	  </div>
-	  <!--  -->
-
-	  	<!-- Datetime -->
-	  	<div class="form-group row">
-	    <label for="Date" class="col-auto col-form-label">Date</label>
-	    <div class="col-sm-10">
-	      <input id="datepicker" width="auto"/>
-	    <script>
-	        $('#datepicker').datepicker({
-	            uiLibrary: 'bootstrap4',
-	            format: 'dd/mm/yyyy',
-	        });
-	    </script>
-	    </div>
-	  	</div>
-		<!--  -->
-	  <div class="form-group row">
-	    <div class="col-sm-10">
-	      <button type="button" class="btn btn-outline-primary btn-sm float-right">Réserver</button>
-	    </div>
-	  </div>
-	</form>
 	<!--  -->
 
 	<!-- Footer -->
@@ -256,6 +239,7 @@
 <!-- Scroll-top -->
 <script type="text/javascript">
 window.onscroll = function() {scrollFunction()};
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("scrollTop").style.display = "block";
@@ -263,16 +247,13 @@ function scrollFunction() {
     document.getElementById("scrollTop").style.display = "none";
   }
 }
+
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>
 <!--  -->
-
-<!-- Date -->
-<!--  -->
-
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

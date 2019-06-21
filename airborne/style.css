@@ -299,6 +299,12 @@ footer #social li {
 	width: 11rem;
 }
 
+#carte2 {
+
+	height: 20rem;
+	width: 25rem;
+}
+
 
 .center {
 
@@ -500,6 +506,31 @@ footer #social li {
 	
 }
 
+#flotte h2 {
+	text-align: center;
+	font-weight: 100!important;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#tarifs {
+	margin-top: 4rem;
+}
+
+#tarifs h2 {
+	text-align: center;
+	font-weight: 100!important;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#horaires h2 {
+	text-align: center;
+	font-weight: 100!important;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
 #diplome p {
 	font-size: 1rem;
 }
@@ -542,4 +573,95 @@ footer #social li {
 	margin-bottom: 1rem;
 	font-weight: 100;
 	font-size: 1rem;
+}
+
+#dc3 {
+
+	background-image: url(assets/images/dc3.jpg) ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 43rem;
+	width: 100%;
+	
+
+}
+
+.blocble{
+  background-color: rgba(102, 153, 204, 0.5);
+  padding: 2%;
+  max-width: 30%; 
+  max-height: auto;
+  z-index: 4;
+  
+}
+
+.expl {
+
+	padding-top: 10%;
+	padding-left: 3%;
+}
+
+#plus {
+	
+	padding-top: 10%;
+	margin-left: 80%;
+}
+
+
+#dc{
+
+	color: #2964A0;
+	position: 	relative	;
+}
+
+#button {
+
+	margin-right: 42%;
+}
+#flotte{
+text-align: center;
+
+}
+
+.fig{
+
+	max-width: 25%;
+}
+
+
+.imgtab {
+	width: 50px;
+	text-align:center;
+	position: absolute	;
+	position: 	fixed;	
+	
+
+}
+
+.txtt {
+
+	position: absolute;
+	z-index: 	1;
+	margin-right: 	50%;
+
+
+}
+
+.img_section3 figure img, figure p {
+  margin-left: 0px;
+  width: 300px;
+  transition: .3s ease-in-out;
+}
+.img_section3:hover figure img, figure p {
+  opacity: 0%;
+  margin-left: 300px;
+/*# sourceMappingURL=bootstrap.css.map */
+}
+
+.imggg {
+
+z-index: 	6;
+position: relative;	
+
+	
 }
