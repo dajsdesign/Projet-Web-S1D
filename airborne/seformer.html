@@ -24,14 +24,12 @@
 		  left: 0, 
 		  behavior: 'smooth'
 		});
-
 		// Scroll certain amounts from current position 
 		window.scrollBy({ 
 		  top: 100, // could be negative value
 		  left: 0, 
 		  behavior: 'smooth' 
 		});
-
 		// Scroll to a certain element
 		document.querySelector('.hello').scrollIntoView({ 
 		  behavior: 'smooth' 
@@ -114,12 +112,12 @@
 			    <div class="col-sm">
 			    	<div class="inline-flex" style="margin-top: 1rem;
 	margin-bottom: 1rem;"></div>
-				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+				      <p>Notre club propose 4 formations;<br> 
+				      	BB qui veut dire Brevet de Base permet de voler dans un rayon de 30 km autour de votre aérodrome, vous aurez besoin de 20h de vol avant de passer l'examen et cette formation est disponible à partir de 15 ans.<br>
+				      	BIA ce qui veut dire Brevet d'Initiation Aéronotique, c'est un diplôme à part pour l'éducation nationale, il faut avoir minimum 13 ans pour pouvoir le passer. L'épreuve écrite dure 2h30 et il faut répondre à une série de 100 questions. Le BIA est gratuit et permet d'avoir des bourses pour le Brevet de Pilote.<br>
+				      	PPL est une Licence Pilote Privée d'avion, pour passer cette licence il faut être agé de 16 ans. La formation pratique dure 45h de vol minimum, dont 25h en double commande et 10h en vol solo. La formation coûte 110€/heure.<br>
+				      	LAPL qui veut dire Licence de Pilote d'Avion Léger elle permet de voler en europe et en france avec des passagers. Pour ce presenter à l'examen il faut avoir 17 ans minimum. La formation coûte entre 3500€ et 5000€.
+				      </p>
 			    </div>
 			    <div class="col-sm" id="progression">
 			      	<div class="inline-flex"></div>
@@ -258,7 +256,6 @@
 <!-- Scroll-top -->
 <script type="text/javascript">
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("scrollTop").style.display = "block";
@@ -266,7 +263,6 @@ function scrollFunction() {
     document.getElementById("scrollTop").style.display = "none";
   }
 }
-
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
